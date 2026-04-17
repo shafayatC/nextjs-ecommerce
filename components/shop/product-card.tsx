@@ -25,7 +25,7 @@ export function ProductCard({ product, onAddToCart, onQuickView }: ProductCardPr
   };
 
   return (
-    <Link href={`/shop/products/${product.slug}`} className="group block">
+    <Link href={`/products/${product.slug}`} className="group block">
       <div className="border rounded-lg overflow-hidden bg-card hover:shadow-lg transition-all duration-200 hover:border-primary/30">
         {/* Image */}
         <div className="relative aspect-square bg-muted/30 overflow-hidden">

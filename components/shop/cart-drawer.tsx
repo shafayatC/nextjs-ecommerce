@@ -63,7 +63,7 @@ export function CartDrawer({ isOpen, onClose, items, onUpdateQuantity, onRemove 
               <p className="font-medium">Your cart is empty</p>
               <p className="text-sm text-muted-foreground mt-1">Add products to start shopping</p>
               <Button className="mt-4" size="sm" onClick={onClose}>
-                <Link href="/shop/products">Browse Products</Link>
+                <Link href="/products">Browse Products</Link>
               </Button>
             </div>
           ) : (
@@ -137,10 +137,10 @@ export function CartDrawer({ isOpen, onClose, items, onUpdateQuantity, onRemove 
                 <span className="font-bold text-primary">৳{total.toLocaleString()}</span>
               </div>
             </div>
-            <Link href="/shop/checkout" onClick={onClose}>
+            <Link href="/checkout" onClick={onClose}>
               <Button className="w-full">Proceed to Checkout</Button>
             </Link>
-            <Link href="/shop/cart" onClick={onClose}>
+            <Link href="/cart" onClick={onClose}>
               <Button variant="outline" className="w-full" size="sm">View Cart</Button>
             </Link>
           </div>

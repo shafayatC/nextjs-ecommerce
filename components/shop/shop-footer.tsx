@@ -33,11 +33,11 @@ export function ShopFooter() {
           <div>
             <h4 className="font-semibold mb-4">Shop</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link href="/shop/products?category=electronics" className="hover:text-foreground transition-colors">Electronics</Link></li>
-              <li><Link href="/shop/products?category=fashion" className="hover:text-foreground transition-colors">Fashion</Link></li>
-              <li><Link href="/shop/products?category=home-living" className="hover:text-foreground transition-colors">Home & Living</Link></li>
-              <li><Link href="/shop/products?category=beauty" className="hover:text-foreground transition-colors">Beauty</Link></li>
-              <li><Link href="/shop/products" className="hover:text-foreground transition-colors">All Products</Link></li>
+              <li><Link href="/products?category=electronics" className="hover:text-foreground transition-colors">Electronics</Link></li>
+              <li><Link href="/products?category=fashion" className="hover:text-foreground transition-colors">Fashion</Link></li>
+              <li><Link href="/products?category=home-living" className="hover:text-foreground transition-colors">Home & Living</Link></li>
+              <li><Link href="/products?category=beauty" className="hover:text-foreground transition-colors">Beauty</Link></li>
+              <li><Link href="/products" className="hover:text-foreground transition-colors">All Products</Link></li>
             </ul>
           </div>
 

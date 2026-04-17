@@ -1,10 +1,9 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { AdminLayout } from '@/components/layout/admin-layout';
 
 export const metadata: Metadata = {
-  title: 'Admin Dashboard',
-  description: 'Admin Dashboard for managing users, products, and more',
+  title: 'BDShop',
+  description: 'E-commerce storefront',
 };
 
 export default function RootLayout({
@@ -15,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="min-h-screen bg-background font-sans antialiased">
-        <AdminLayout>{children}</AdminLayout>
+        {children}
       </body>
     </html>
   );

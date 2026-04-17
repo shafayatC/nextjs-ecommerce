@@ -26,7 +26,7 @@ export function ShopNavbar({ cartCount = 0, onCartOpen }: ShopNavbarProps) {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/shop" className="flex items-center gap-2 flex-shrink-0">
+          <Link href="/" className="flex items-center gap-2 flex-shrink-0">
             <div className="w-9 h-9 bg-primary rounded-lg flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-sm">BD</span>
             </div>
@@ -35,10 +35,10 @@ export function ShopNavbar({ cartCount = 0, onCartOpen }: ShopNavbarProps) {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-6">
-            <Link href="/shop" className="text-sm font-medium hover:text-primary transition-colors">Home</Link>
-            <Link href="/shop/products" className="text-sm font-medium hover:text-primary transition-colors">Products</Link>
-            <Link href="/shop/orders" className="text-sm font-medium hover:text-primary transition-colors">Orders</Link>
-            <Link href="/shop/account" className="text-sm font-medium hover:text-primary transition-colors">Account</Link>
+            <Link href="/" className="text-sm font-medium hover:text-primary transition-colors">Home</Link>
+            <Link href="/products" className="text-sm font-medium hover:text-primary transition-colors">Products</Link>
+            <Link href="/orders" className="text-sm font-medium hover:text-primary transition-colors">Orders</Link>
+            <Link href="/account" className="text-sm font-medium hover:text-primary transition-colors">Account</Link>
           </nav>
 
           {/* Right actions */}
@@ -64,6 +64,12 @@ export function ShopNavbar({ cartCount = 0, onCartOpen }: ShopNavbarProps) {
             <Button variant="ghost" size="sm" className="h-9 w-9 p-0 relative">
               <Heart className="h-4 w-4" />
             </Button>
+
+            <Link href="/login" className="hidden md:inline-flex">
+              <Button variant="default" size="sm" className="h-9">
+                Login
+              </Button>
+            </Link>
 
             <Button
               variant="ghost"
@@ -93,9 +99,9 @@ export function ShopNavbar({ cartCount = 0, onCartOpen }: ShopNavbarProps) {
               </Button>
               {accountOpen && (
                 <div className="absolute right-0 top-full mt-1 w-48 bg-background border rounded-lg shadow-lg py-1 z-50">
-                  <Link href="/shop/account" className="block px-4 py-2 text-sm hover:bg-muted" onClick={() => setAccountOpen(false)}>Profile</Link>
-                  <Link href="/shop/orders" className="block px-4 py-2 text-sm hover:bg-muted" onClick={() => setAccountOpen(false)}>My Orders</Link>
-                  <Link href="/shop/account" className="block px-4 py-2 text-sm hover:bg-muted" onClick={() => setAccountOpen(false)}>Settings</Link>
+                  <Link href="/account" className="block px-4 py-2 text-sm hover:bg-muted" onClick={() => setAccountOpen(false)}>Profile</Link>
+                  <Link href="/orders" className="block px-4 py-2 text-sm hover:bg-muted" onClick={() => setAccountOpen(false)}>My Orders</Link>
+                  <Link href="/account" className="block px-4 py-2 text-sm hover:bg-muted" onClick={() => setAccountOpen(false)}>Settings</Link>
                   <div className="border-t my-1" />
                   <button className="w-full text-left px-4 py-2 text-sm text-destructive hover:bg-muted">Logout</button>
                 </div>
@@ -128,10 +134,10 @@ export function ShopNavbar({ cartCount = 0, onCartOpen }: ShopNavbarProps) {
         {/* Mobile nav */}
         {mobileMenuOpen && (
           <nav className="md:hidden border-t py-3 flex flex-col gap-2">
-            <Link href="/shop" className="px-2 py-2 text-sm font-medium hover:bg-muted rounded" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-            <Link href="/shop/products" className="px-2 py-2 text-sm font-medium hover:bg-muted rounded" onClick={() => setMobileMenuOpen(false)}>Products</Link>
-            <Link href="/shop/orders" className="px-2 py-2 text-sm font-medium hover:bg-muted rounded" onClick={() => setMobileMenuOpen(false)}>Orders</Link>
-            <Link href="/shop/account" className="px-2 py-2 text-sm font-medium hover:bg-muted rounded" onClick={() => setMobileMenuOpen(false)}>Account</Link>
+            <Link href="/" className="px-2 py-2 text-sm font-medium hover:bg-muted rounded" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+            <Link href="/products" className="px-2 py-2 text-sm font-medium hover:bg-muted rounded" onClick={() => setMobileMenuOpen(false)}>Products</Link>
+            <Link href="/orders" className="px-2 py-2 text-sm font-medium hover:bg-muted rounded" onClick={() => setMobileMenuOpen(false)}>Orders</Link>
+            <Link href="/account" className="px-2 py-2 text-sm font-medium hover:bg-muted rounded" onClick={() => setMobileMenuOpen(false)}>Account</Link>
           </nav>
         )}
       </div>
