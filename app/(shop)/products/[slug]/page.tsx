@@ -37,7 +37,7 @@ export default function ProductDetailPage() {
     return (
       <div className="container mx-auto px-4 py-16 text-center">
         <h1 className="text-2xl font-bold mb-4">Product Not Found</h1>
-        <Link href="/shop/products"><Button>Browse Products</Button></Link>
+        <Link href="/products"><Button>Browse Products</Button></Link>
       </div>
     );
   }
@@ -51,10 +51,10 @@ export default function ProductDetailPage() {
 
   return (
     <div className="container mx-auto px-4 py-6 space-y-6">
-      <ShopBreadcrumb items={[{ label: 'Products', href: '/shop/products' }, { label: product.category }, { label: product.name }]} />
+      <ShopBreadcrumb items={[{ label: 'Products', href: '/products' }, { label: product.category }, { label: product.name }]} />
 
       {/* Back button */}
-      <Link href="/shop/products" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground">
+      <Link href="/products" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground">
         <ChevronLeft className="h-4 w-4" /> Back to Products
       </Link>
 

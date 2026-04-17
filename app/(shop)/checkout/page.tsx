@@ -44,10 +44,10 @@ export default function CheckoutPage() {
         <p className="text-muted-foreground mb-2">Your order has been confirmed.</p>
         <p className="text-muted-foreground mb-6">Order ID: <span className="font-mono font-medium">ORD-2024-007</span></p>
         <div className="flex gap-3 justify-center">
-          <Link href="/shop/orders">
+          <Link href="/orders">
             <Button>View Orders</Button>
           </Link>
-          <Link href="/shop">
+          <Link href="">
             <Button variant="outline">Continue Shopping</Button>
           </Link>
         </div>
@@ -57,7 +57,7 @@ export default function CheckoutPage() {
 
   return (
     <div className="container mx-auto px-4 py-6 space-y-6">
-      <ShopBreadcrumb items={[{ label: 'Cart', href: '/shop/cart' }, { label: 'Checkout' }]} />
+      <ShopBreadcrumb items={[{ label: 'Cart', href: '/cart' }, { label: 'Checkout' }]} />
 
       <h1 className="text-2xl md:text-3xl font-bold">Checkout</h1>
 

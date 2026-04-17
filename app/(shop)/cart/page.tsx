@@ -37,7 +37,7 @@ export default function CartPage() {
         <ShoppingBag className="h-16 w-16 text-muted-foreground mx-auto mb-4" />
         <h1 className="text-2xl font-bold mb-2">Your Cart is Empty</h1>
         <p className="text-muted-foreground mb-6">Looks like you haven&apos;t added anything to your cart yet.</p>
-        <Link href="/shop/products">
+        <Link href="/products">
           <Button>Start Shopping</Button>
         </Link>
       </div>
@@ -106,7 +106,7 @@ export default function CartPage() {
             </Card>
           ))}
 
-          <Link href="/shop/products" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground">
+          <Link href="/products" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground">
             <ArrowRight className="h-4 w-4 rotate-180" /> Continue Shopping
           </Link>
         </div>
@@ -114,7 +114,7 @@ export default function CartPage() {
         {/* Order Summary */}
         <div className="space-y-4">
           <OrderSummary items={items} shipping={shipping} discount={discount} />
-          <Link href="/shop/checkout">
+          <Link href="/checkout">
             <Button className="w-full" size="lg">Proceed to Checkout</Button>
           </Link>
         </div>

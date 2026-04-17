@@ -52,12 +52,12 @@ export default function ShopHomePage() {
                 Discover quality products from trusted local and international brands. Fast delivery across Bangladesh.
               </p>
               <div className="flex flex-wrap gap-3">
-                <Link href="/shop/products">
+                <Link href="/products">
                   <Button size="lg" className="gap-2">
                     Shop Now <ArrowRight className="h-4 w-4" />
                   </Button>
                 </Link>
-                <Link href="/shop/products?category=fashion">
+                <Link href="/products?category=fashion">
                   <Button variant="outline" size="lg">
                     Explore Fashion
                   </Button>
@@ -67,7 +67,7 @@ export default function ShopHomePage() {
             <div className="relative">
               <div className="aspect-square max-w-md mx-auto relative">
                 <img
-                  src="https://picsum.photos/seed/shophero/600/600"
+                  src="https://picsum.photos/seed/hero/600/600"
                   alt="Shopping"
                   className="w-full h-full object-cover rounded-2xl shadow-2xl"
                 />
@@ -112,7 +112,7 @@ export default function ShopHomePage() {
       <section className="container mx-auto px-4 py-12">
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-2xl font-bold">Shop by Category</h2>
-          <Link href="/shop/products" className="text-sm text-primary font-medium hover:underline">
+          <Link href="/products" className="text-sm text-primary font-medium hover:underline">
             View All →
           </Link>
         </div>
@@ -120,7 +120,7 @@ export default function ShopHomePage() {
           {shopCategories.map(cat => (
             <Link
               key={cat.id}
-              href={`/shop/products?category=${encodeURIComponent(cat.name)}`}
+              href={`/products?category=${encodeURIComponent(cat.name)}`}
               className="group flex flex-col items-center text-center p-4 rounded-xl border hover:border-primary/30 hover:shadow-md transition-all"
             >
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-3 group-hover:bg-primary/20 transition-colors">
@@ -157,7 +157,7 @@ export default function ShopHomePage() {
                 <p className="text-xs text-white/70 mt-1">Seconds</p>
               </div>
             </div>
-            <Link href="/shop/products?sale=true">
+            <Link href="/products?sale=true">
               <Button variant="outline" size="lg" className="gap-2 whitespace-nowrap">
                 Shop Sale <ArrowRight className="h-4 w-4" />
               </Button>
@@ -170,7 +170,7 @@ export default function ShopHomePage() {
       <section className="container mx-auto px-4 py-12">
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-2xl font-bold">New Arrivals</h2>
-          <Link href="/shop/products?sort=newest" className="text-sm text-primary font-medium hover:underline">
+          <Link href="/products?sort=newest" className="text-sm text-primary font-medium hover:underline">
             View All →
           </Link>
         </div>
@@ -181,7 +181,7 @@ export default function ShopHomePage() {
       <section className="container mx-auto px-4 py-12">
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-2xl font-bold">Best Sellers</h2>
-          <Link href="/shop/products?sort=popularity" className="text-sm text-primary font-medium hover:underline">
+          <Link href="/products?sort=popularity" className="text-sm text-primary font-medium hover:underline">
             View All →
           </Link>
         </div>

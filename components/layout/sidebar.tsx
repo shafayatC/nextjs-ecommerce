@@ -30,22 +30,22 @@ interface SidebarNavItem {
 }
 
 const navItems: SidebarNavItem[] = [
-  { href: '/', label: 'Dashboard', icon: LayoutDashboard },
-  { href: '/users', label: 'Users', icon: Users },
-  { href: '/roles', label: 'Roles', icon: Shield },
-  { href: '/permissions', label: 'Permissions', icon: Key },
-  { href: '/products', label: 'Products', icon: Package },
-  { href: '/categories', label: 'Categories', icon: Tags },
-  { href: '/brands', label: 'Brands', icon: Building2 },
-  { href: '/media', label: 'Media Gallery', icon: Image },
+  { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
+  { href: '/dashboard/users', label: 'Users', icon: Users },
+  { href: '/dashboard/roles', label: 'Roles', icon: Shield },
+  { href: '/dashboard/permissions', label: 'Permissions', icon: Key },
+  { href: '/dashboard/products', label: 'Products', icon: Package },
+  { href: '/dashboard/categories', label: 'Categories', icon: Tags },
+  { href: '/dashboard/brands', label: 'Brands', icon: Building2 },
+  { href: '/dashboard/media', label: 'Media Gallery', icon: Image },
   {
-    href: '/admin',
+    href: '/dashboard/admin',
     label: 'System',
     icon: Settings,
     children: [
-      { href: '/admin/menu', label: 'Menu Management', icon: Menu },
-      { href: '/admin/settings', label: 'Settings', icon: Settings },
-      { href: '/admin/activity', label: 'Activity Logs', icon: Activity },
+      { href: '/dashboard/admin/menu', label: 'Menu Management', icon: Menu },
+      { href: '/dashboard/admin/settings', label: 'Settings', icon: Settings },
+      { href: '/dashboard/admin/activity', label: 'Activity Logs', icon: Activity },
     ],
   },
 ];

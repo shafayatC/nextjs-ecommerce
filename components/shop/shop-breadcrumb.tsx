@@ -18,7 +18,7 @@ interface ShopBreadcrumbProps {
 export function ShopBreadcrumb({ items, className }: ShopBreadcrumbProps) {
   return (
     <nav className={cn('flex items-center gap-1 text-sm flex-wrap', className)}>
-      <Link href="/shop" className="text-muted-foreground hover:text-foreground transition-colors">
+      <Link href="" className="text-muted-foreground hover:text-foreground transition-colors">
         Home
       </Link>
       {items.map((item, index) => {
